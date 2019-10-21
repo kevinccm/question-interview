@@ -1,0 +1,7 @@
+$base-font-size-value: 16;
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+@function px2rem($to-px, $base-px: $base-font-size-value) {
+  @return (strip-units($to-px) / $base-px) + rem;
+}

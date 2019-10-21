@@ -1,0 +1,115 @@
+@import "../../css/sass/common";
+
+.loading {
+  text-align: center;
+}
+.list-container {
+  border-top: px2rem(1) solid #e5e5e5;
+  #app-item {
+    list-style-type: none;
+
+    &.row {
+      margin: 0; /* To remove default bottom margin */
+      padding: 0; /* To remove default left padding */
+    }
+
+    .dv-star-rating-empty-star {
+      .fa-star-o:before {
+        color: rgb(255, 180, 0);
+        padding-bottom: 1px;
+        font-size: px2rem(9);
+      }
+    }
+
+    li:nth-child(even) {
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    li:nth-child(odd) {
+      img {
+        border-radius: 20%;
+      }
+    }
+
+    li {
+      cursor: help;
+      padding: px2rem(10) 0;
+
+      display: table;
+      .artist-index {
+        width: px2rem(45);
+        font-size: px2rem(20);
+        text-align: center;
+        color: #858586;
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .artist-image {
+        width: px2rem(55);
+        display: table-cell;
+        vertical-align: middle;
+        min-width: 13%;
+        img {
+          width: px2rem(55);
+        }
+      }
+
+      .artist-info {
+        padding-left: px2rem(10);
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      .artist-name {
+        display: inline-block;
+        font-size: px2rem(11);
+        font-weight: bold;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+
+      .artist-genres {
+        font-size: px2rem(11);
+        color: #868685;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+
+      .dv-star-rating {
+        top: px2rem(4);
+        padding-right: px2rem(3);
+      }
+
+      .dv-star-rating-star,
+      .review {
+        font-size: px2rem(11);
+        margin: 0;
+      }
+
+      .review {
+        display: inline-block;
+        position: relative;
+        color: #8c8b8c;
+      }
+    }
+  }
+
+  @media (max-width: px2rem(575)) {
+    #app-item {
+      li {
+        border-bottom: px2rem(1) solid #e5e5e5;
+      }
+    }
+  }
+}

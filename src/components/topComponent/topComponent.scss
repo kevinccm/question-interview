@@ -1,0 +1,61 @@
+@import "../../css/sass/common";
+
+.top-container {
+  padding: px2rem(10) px2rem(0) px2rem(0) px2rem(0);
+
+  ul {
+    margin: 0;
+  }
+
+  label {
+    font-size: px2rem(16);
+    font-weight: bold;
+  }
+
+  #app-item {
+    display: inline-block;
+    max-width: 100%;
+    overflow-y: hidden;
+    overflow: auto;
+    white-space: nowrap;
+    padding: px2rem(10) px2rem(0) px2rem(10) px2rem(0);
+    cursor: help;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+      width: px2rem(80);
+      padding-right: px2rem(15);
+      padding-bottom: px2rem(10);
+
+      .artist-image {
+        img {
+          width: 100%;
+          border-radius: 10%;
+        }
+      }
+
+      .artist-name {
+        font-size: px2rem(11);
+        font-weight: bold;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .artist-genres {
+        font-size: px2rem(11);
+        color: #868685;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+}

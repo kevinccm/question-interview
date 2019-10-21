@@ -1,0 +1,20 @@
+@import '../../css/sass/common';
+
+.search-container {
+    background-color: #f7f7f8;
+    border-bottom: px2rem(1) solid #e5e5e5;
+    padding: px2rem(5) px2rem(10);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    
+    .search {
+        background-color: #e3e4e5;
+        border-radius: px2rem(5);
+        border: 0;
+        padding: px2rem(5) px2rem(0) px2rem(5) px2rem(0);
+        text-align: center;
+        width: 100%;
+    }
+}
